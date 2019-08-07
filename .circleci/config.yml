@@ -6,7 +6,7 @@ jobs:
       steps:
         - checkout
         #login to docker
-        - run: docker login -u $DOCKER_USER -p $DOCKER_PASS 
+        - run: docker login -u nabadoon -p Shadia12# 
         #Build the application image
         - run: docker buid -t $DOCKER_USER/myapp:$CIRCLE_SHA1 .
         #deploy the image
